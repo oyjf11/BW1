@@ -1,5 +1,5 @@
 import { computed } from 'vue'; // 计算属性
-import {PC_DEVICE_WIDTh} from '../constants';
+import {PC_DEVICE_WIDTh} from '@/constants';
 import { useWindowSize } from '@vueuse/core';
 
 const {width} = useWindowSize();
