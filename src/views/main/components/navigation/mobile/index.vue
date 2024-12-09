@@ -4,8 +4,16 @@
     </div>  
 </template>
     
-<script setup lang='ts'>
-    
+<script setup>
+import {getCategory} from '@/api/category.js'
+
+const getCategoryData = async () => {
+    const res = await getCategory()
+
+    console.log('res', res)
+}
+
+getCategoryData()
 </script>
     
 <style lang="scss" scoped>
