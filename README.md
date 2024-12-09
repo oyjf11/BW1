@@ -6,6 +6,10 @@ Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://
 
 1. 先构建移动端 再构建pc端
 
-2. import { computed } from 'vue'; // 计算
+2. import { computed } from 'vue'; // 计算属性
 
 
+
+
+1. vueUse 
+2. useWindowSize
