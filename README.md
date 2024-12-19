@@ -28,3 +28,12 @@ plugins: [
     })
   ],
 注册svg-icon import 'virtual:svg-icons-register' -->
+
+
+const sliderStyle = ref({
+  transform: 'translateX(0px)',
+  width: '47px'
+})
+:ref="getLiRefs" 绑定一个函数 获取所有的 ref 元素
+onBeforeUpdate itemsRef = []
+import { useScroll } from "@vueuse/core"
