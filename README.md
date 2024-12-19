@@ -13,3 +13,18 @@ Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://
 
 1. vueUse 
 2. useWindowSize
+
+
+<!-- vite-plugin-svg-icons
+npm i --save-dev vite-plugin-svg-icons@2.0.1
+vite 处理 svg矢量图
+导入 注册plugin
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
+plugins: [
+    vue(),
+    createSvgIconsPlugin({
+      iconDirs: [path.resolve(process.cwd(), './src/assets/icons')],
+      symbolId: 'icon-[name]'
+    })
+  ],
+注册svg-icon import 'virtual:svg-icons-register' -->
