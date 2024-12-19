@@ -37,3 +37,6 @@ const sliderStyle = ref({
 :ref="getLiRefs" 绑定一个函数 获取所有的 ref 元素
 onBeforeUpdate itemsRef = []
 import { useScroll } from "@vueuse/core"
+
+
+unshift

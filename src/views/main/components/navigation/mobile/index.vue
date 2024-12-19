@@ -42,7 +42,7 @@ defineProps({
 
 const sliderStyle = ref({
   transform: "translateX(0px)",
-  width: "47px"
+  width: "50px"
 })
 
 const itemIndex = ref(0) // 定义点击的li的index
