@@ -27,7 +27,7 @@
         {{ item.name }}
       </li>
       <m-popup v-model="isVisible" type="true">
-        我是内容
+        <menue-vue :categories="data" @click:menu="handleClickMenu"></menue-vue>
       </m-popup>
     </ul>
   </div>
@@ -36,6 +36,7 @@
 <script setup>
 import { ref, watch } from "vue"
 import { useScroll } from "@vueuse/core"
+import MenueVue from "@/components/menu/index.vue"
 
 defineProps({
   data: {
@@ -77,7 +78,11 @@ watch(itemIndex, (index) => {
 const isVisible = ref(false);
 const handleClickHamburger = () => {
   isVisible.value = !isVisible.value;
-  console.log('isVisible.value ', isVisible.value )
+}
+
+const handleClickMenu = (index) => {
+  itemIndex.value = index
+  isVisible.value = !isVisible.value;
 }
 </script>
 
