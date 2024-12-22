@@ -11,6 +11,7 @@
       <!--hamburger icon-->
       <li
         class="fixed top-0 right-[-1px] h-4 px-1 flex items-center bg-white z-20 shadow-l-white"
+        @click="handleClickHamburger"
       >
         <m-svg-icon class="w-1.5 h-1.5" name="hamburger"></m-svg-icon>
       </li>
@@ -25,6 +26,9 @@
       >
         {{ item.name }}
       </li>
+      <m-popup v-model="isVisible" type="true">
+        我是内容
+      </m-popup>
     </ul>
   </div>
 </template>
@@ -69,6 +73,12 @@ watch(itemIndex, (index) => {
     width: `${width}px`
   }
 })
+
+const isVisible = ref(false);
+const handleClickHamburger = () => {
+  isVisible.value = !isVisible.value;
+  console.log('isVisible.value ', isVisible.value )
+}
 </script>
 
 <style lang="scss" scoped></style>
