@@ -45,3 +45,7 @@ unshift
 <teleport to="body">
 
 useVModel
+
+模块自动化注册
+vite glob导入
+vue defineAsyncComponent
