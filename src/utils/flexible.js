@@ -9,6 +9,7 @@ const {width} = useWindowSize();
  */
 
 export const isMobileTerminal = computed(() => {
+  console.log('width.value < PC_DEVICE_WIDTh', width.value < PC_DEVICE_WIDTh)
     return width.value < PC_DEVICE_WIDTh;
 })
 
